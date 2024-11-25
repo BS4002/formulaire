@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <div class="form-container">
+    <h1>Rejoignez notre communauté !</h1>
+    <p>Créez un compte en quelques étapes pour profiter de nos services exclusifs.</p>
+
+    <form method="POST">
+        <label for="nom">Nom complet :</label><br>
+        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom complet" class="c1" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" placeholder="Entrez votre email" class="c1" required><br><br>
+
+        <!-- Mot de passe -->
+        <label for="password">Mot de passe :</label><br>
+        <input type="password" id="password" name="password" placeholder="Créez un mot de passe"class="c1" required><br><br>
+
+        <!-- Confirmer le mot de passe -->
+        <label for="confirm_password">Confirmer le mot de passe :</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmez le mot de passe" class="c1" required><br><br>
+
+        <!-- Téléphone -->
+        <label for="telephone">Téléphone :</label><br>
+        <input type="tel" id="telephone" name="telephone" placeholder="06XXXXXXXX" class="c1"><br><br>
+
+        <!-- Date de naissance -->
+        <label for="date_naissance">Date de naissance :</label><br>
+        <input type="date" id="date_naissance" name="date_naissance" class="c1"><br><br>
+
+        <!-- Genre -->
+        <label>Genre :</label><br>
+        <input type="radio" id="homme" name="genre" value="homme">
+        <label for="homme">Homme</label>
+        <input type="radio" id="femme" name="genre" value="femme">
+        <label for="femme">Femme</label><br><br>
+
+        <!--Pays-->
+        <label for="pays">Pays :</label><br>
+        <select id="pays" name="pays" class="c1" required>
+            <option value="" disabled selected>-- Sélectionnez un pays --</option>
+            <option value="maroc">Maroc</option>
+            <option value="france">France</option>
+            <option value="algerie">Algérie</option>
+            <option value="tunisie">Tunisie</option>
+            <option value="autre">Autre</option>
+        </select><br><br>
+
+        <!--Ville-->
+        <label for="ville">Ville :</label><br>
+        <select id="ville" name="ville" class="c1" required>
+            <option value="" disabled selected>-- Sélectionnez une ville --</option>
+            <option value="casablanca">Casablanca</option>
+            <option value="rabat">Rabat</option>
+            <option value="marrakech">Marrakech</option>
+            <option value="fes">Fès</option>
+            <option value="tanger">Tanger</option>
+            <option value="agadir">Agadir</option>
+            <option value="oujda">Oujda</option>
+            <option value="meknes">Meknès</option>
+            <option value="tetouan">Tétouan</option>
+            <option value="laayoune">Laâyoune</option>
+            <option value="dakhla">Dakhla</option>
+        </select>
+        <br><br>
+
+        
+        <label>Dans quels domaines de la programmation êtes-vous intéressé(e) ?</label><br><br>
+        <label><input type="checkbox" name="interets" value="developpement_web" > Développement Web</label><br><br>
+        <label><input type="checkbox" name="interets" value="intelligence_artificielle" > Intelligence Artificielle</label><br><br>
+        <label><input type="checkbox" name="interets" value="data_science" > Data Science</label><br><br>
+        <label><input type="checkbox" name="interets" value="developpement_mobile" > Développement Mobile</label><br><br>
+        <label><input type="checkbox" name="interets" value="cybersecurite" > Cybersécurité</label><br><br>
+        <label><input type="checkbox" name="interets" value="jeux_video" > Développement de Jeux Vidéo</label><br><br><br>
+        
+
+        <label for="question">Quelle est votre plus grande réalisation en programmation ?</label><br><br>
+        <textarea id="question" name="question" rows="5" cols="50" class="c1" placeholder="Partagez votre expérience ici..."></textarea><br><br>
+
+    
+        <!-- Bouton de soumission -->
+        <button type="submit">S'inscrire</button>
+    </form>
+    </div>
+    
+</body>
+</html>
